@@ -1,0 +1,75 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`GrapQL:Users Users : Get name and _id 1`] = `
+Object {
+  "data": Object {
+    "users": Array [
+      Object {
+        "_id": "603ec467770f507d7910580a",
+        "name": "Proutios",
+      },
+      Object {
+        "_id": "603ec467770f507d7910580b",
+        "name": "Proutini",
+      },
+      Object {
+        "_id": "603ec467770f507d7910580c",
+        "name": "Proutalop",
+      },
+      Object {
+        "_id": "603ec467770f507d7910580d",
+        "name": "Daolika",
+      },
+      Object {
+        "_id": "603ec467770f507d7910580e",
+        "name": "Ronuni",
+      },
+      Object {
+        "_id": "603ec467770f507d7910580f",
+        "name": "Louika",
+      },
+    ],
+  },
+  "errors": undefined,
+  "extensions": undefined,
+  "http": Object {
+    "headers": Headers {
+      Symbol(map): Object {},
+    },
+  },
+}
+`;
+
+exports[`GrapQL:Users Users : Get only name 1`] = `
+Object {
+  "data": Object {
+    "users": Array [
+      Object {
+        "name": "Proutios",
+      },
+      Object {
+        "name": "Proutini",
+      },
+      Object {
+        "name": "Proutalop",
+      },
+      Object {
+        "name": "Daolika",
+      },
+      Object {
+        "name": "Ronuni",
+      },
+      Object {
+        "name": "Louika",
+      },
+    ],
+  },
+  "errors": undefined,
+  "extensions": undefined,
+  "http": Object {
+    "headers": Headers {
+      Symbol(map): Object {},
+    },
+  },
+}
+`;

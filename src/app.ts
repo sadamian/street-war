@@ -1,13 +1,13 @@
 import express from "express";
 import cors from "cors";
 import helmet from "helmet";
-import bodyParser from 'body-parser';
-import {ApolloServer} from 'apollo-server-express';
+import bodyParser from "body-parser";
+import { ApolloServer } from "apollo-server-express";
 
 import { mainRouter } from "./router";
 import { errorHandler } from "./middleware/error.middleware";
 import { notFoundHandler } from "./middleware/notFound.middleware";
-import graphQLserver from './graphql'
+import graphQLserver from "./graphql";
 
 const app = express();
 
@@ -19,7 +19,6 @@ app.use(express.json());
 // GraphQL (! Always before routing)
 graphQLserver.applyMiddleware({ app });
 
-
 // Routing
 app.use("/", mainRouter);
 
@@ -27,6 +26,5 @@ app.use("/", mainRouter);
 // Error middleware
 app.use(errorHandler);
 app.use(notFoundHandler);
-
 
 export default app;

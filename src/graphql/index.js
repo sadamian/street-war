@@ -10,7 +10,7 @@ export const dataSources = () => ({
 const server = new ApolloServer({
   typeDefs,
   resolvers,
-  dataSources
+  dataSources,
 });
 
-export default server
+export default server;
