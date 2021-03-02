@@ -70,14 +70,16 @@ and a new contract is created
 #### war lifecycle example : 
 - 4 users : A, B, C, D
 - Starting contracts 
-```A -> B
+```
+   A -> B
    B -> C
    C -> D
    D -> A
 ```
 
 If A kills B then, active contracts are as follow
-```A -> C
+```
+   A -> C
    C -> D
    D -> A
 ```
