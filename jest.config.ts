@@ -21,7 +21,8 @@ export default {
 
   // An array of glob patterns indicating a set of files for which coverage information should be collected
   collectCoverageFrom: [
-    "src/**/*.{ts,tsx, js, jsx}",
+    "src/**/*.{js, jsx}",
+    "src/**/*.{ts,tsx}",
     "!**/node_modules/**",
     "!**/vendor/**",
   ],
@@ -95,7 +96,7 @@ export default {
   // notifyMode: "failure-change",
 
   // A preset that is used as a base for Jest's configuration
-  preset: "ts-jest",
+  preset: "ts-jest/presets/js-with-ts",
 
   // Run tests from one or more projects
   // projects: undefined,
